@@ -13,6 +13,9 @@ function readCSV($file, $key1, $key2) {
         return $array;
     }
 }
+function writeCSV($file){
+
+}
 
 
 $authors = readCSV("authors.csv", "first_name", "last_name");

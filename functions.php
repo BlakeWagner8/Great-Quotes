@@ -12,7 +12,7 @@ $imgs = ["https://i.ibb.co/0MSRhGc/1.png",
 
 function createCards($users, $authors, $quotes, $imgs) {
     for ($i = 1; $i <= count($quotes); $i++) { ?>
-        <div class="slider-item align-content-center">
+        <a href="detail.php?index=<?=$i?>"><div class="slider-item align-content-center">
             <div class="animation-card_image">
                 <img src=<?= $imgs[random_int(0, 7)] ?>>
             </div>
@@ -30,8 +30,8 @@ function createCards($users, $authors, $quotes, $imgs) {
                     </figcaption>
                 </figure>
             </div>
-        </div>
-    <?
+        </div></a>
+    <?php
     }
 }
 
